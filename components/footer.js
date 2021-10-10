@@ -29,7 +29,7 @@ export default function Footer() {
           <p className="mb-2 text-left text-xs text-gray-600">
             This website does NOT use cookies and does not track you.
           </p>
-          <p className="text-left text-sm text-gray-800">
+          <div className="text-left text-sm text-gray-800">
             This work is licensed under{" "}
             <a
               href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
@@ -76,7 +76,7 @@ export default function Footer() {
                 />
               </div>
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
