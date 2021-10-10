@@ -1,4 +1,5 @@
 import { ExternalLinkIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -34,30 +35,44 @@ export default function Footer() {
               rel="license noopener noreferrer"
               className="inline-block font-semibold"
             >
-              <span title="Creative Commons: Attribution-NonCommercial 4.0 International">
+              <span
+                title="Creative Commons: Attribution-NonCommercial 4.0 International"
+                className="mr-2"
+              >
                 CC BY-NC 4.0
               </span>
-              <img
-                className="inline-block h-5 ml-1 align-text-bottom relative"
-                style={{top:"2px"}}
-                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-                alt="CC: Creative Commons"
-                title="CC: Creative Commons"
-              />
-              <img
-                className="inline-block h-5 ml-1 align-text-bottom relative"
-                style={{top:"2px"}}
-                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-                alt="BY: Credit must be given to you, the creator."
-                title="BY: Credit must be given to you, the creator."
-              />
-              <img
-                className="inline-block h-5 ml-1 align-text-bottom relative"
-                style={{top:"2px"}}
-                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
-                alt="NC: Only noncommercial use of your work is permitted."
-                title="NC: Only noncommercial use of your work is permitted."
-              />
+
+              <div className="inline-block mr-1 relative top-1">
+                <Image
+                  src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                  alt="CC: Creative Commons"
+                  title="CC: Creative Commons"
+                  width={20}
+                  height={20}                  
+                />
+              </div>
+
+              <div className="inline-block mr-1 relative top-1">
+                <Image
+                  src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                  alt="BY: Credit must be given to you, the creator."
+                  title="BY: Credit must be given to you, the creator."
+                  width={20}
+                  height={20}
+                  className=""
+                />
+              </div>
+
+              <div className="inline-block mr-1 relative top-1">
+                <Image
+                  src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                  alt="NC: Only noncommercial use of your work is permitted."
+                  title="NC: Only noncommercial use of your work is permitted."
+                  width={20}
+                  height={20}
+                  className=""
+                />
+              </div>
             </a>
           </p>
         </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const entries = [
   {
     id: 1,
@@ -76,10 +78,13 @@ export default function Career() {
                     {entry.type === "company" ? (
                       <>
                         <div className="relative">
-                          <img
-                            className="h-10 w-10 rounded-full flex items-center justify-center ring-8 ring-white bg-white"
+                          <Image
                             src={entry.data.logoUrl}
                             alt={entry.data.name}
+                            title={entry.data.name}
+                            width={40}
+                            height={40}
+                            className="h-10 w-10 rounded-full flex items-center justify-center ring-8 ring-white bg-white"
                           />
                         </div>
                         <div className="min-w-0 flex-1">
