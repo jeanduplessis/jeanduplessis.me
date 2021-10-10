@@ -45,6 +45,7 @@ export default function Header() {
               <a
                 href="https://linkedin.com/in/jeandp"
                 target="_blank"
+                rel="noopener"
                 className="inline-block bg-blue-200 py-2 px-4 border border-transparent rounded-md md:text-base text-sm font-medium text-gray-800 hover:bg-opacity-75"
               >
                 LinkedIn{" "}
@@ -53,6 +54,7 @@ export default function Header() {
               <a
                 href="https://github.com/jeanduplessis"
                 target="_blank"
+                rel="noopener"
                 className="inline-block bg-blue-200 py-2 px-4 border border-transparent rounded-md md:text-base text-sm font-medium text-gray-800 hover:bg-opacity-75"
               >
                 GitHub{" "}
