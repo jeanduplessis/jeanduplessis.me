@@ -10,7 +10,7 @@ const securityHeaders = [
   {
     key: "Content-Security-Policy",
     value:
-      "default-src 'self' 'unsafe-inline' 'unsafe-eval' fonts.googleapis.com; img-src 'self' data:; font-src fonts.gstatic.com",
+      "default-src 'self' 'unsafe-inline' 'unsafe-eval' fonts.googleapis.com; img-src 'self' data:; font-src fonts.gstatic.com; connect-src vitals.vercel-insights.com",
   },
 ];
 
