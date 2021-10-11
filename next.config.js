@@ -1,3 +1,5 @@
+const withPWA = require('next-pwa')
+
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -14,7 +16,7 @@ const securityHeaders = [
   },
 ];
 
-module.exports = {
+module.exports = withPWA({
   webpack5: true,
   images: {
     domains: ["mirrors.creativecommons.org"],
@@ -28,4 +30,4 @@ module.exports = {
       },
     ];
   },
-};
+});
