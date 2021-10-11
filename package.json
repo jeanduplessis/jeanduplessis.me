@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
+    "next-sitemap": "^1.6.179",
     "postcss": "^8.3.9",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
