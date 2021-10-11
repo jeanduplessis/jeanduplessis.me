@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ExternalLinkIcon } from "@heroicons/react/outline";
 
 const navigation = [
@@ -18,17 +19,19 @@ export default function Header() {
         >
           <div className="w-full py-3 flex items-center justify-between border-b border-gray-900 lg:border-none">
             <div className="flex items-center">
-              <a href="/">
-                <span className="sr-only">Jean du Plessis</span>
+              <Link href="/">
+                <a>
+                  <span className="sr-only">Jean du Plessis</span>
 
-                <Image
-                  src="/jean-du-plessis-profile@2x.png"
-                  alt="Jean du Plessis' avatar"
-                  title="Jean du Plessis' avatar"
-                  width={100}
-                  height={103}
-                />
-              </a>
+                  <Image
+                    src="/jean-du-plessis-profile@2x.png"
+                    alt="Jean du Plessis' avatar"
+                    title="Jean du Plessis' avatar"
+                    width={100}
+                    height={103}
+                  />
+                </a>
+              </Link>
               <div className="hidden ml-10 space-x-10 lg:block">
                 {navigation.map((link) => (
                   <a
@@ -45,7 +48,7 @@ export default function Header() {
               <a
                 href="https://linkedin.com/in/jeandp"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer noopener"
                 className="inline-block bg-blue-200 py-2 px-4 border border-transparent rounded-md md:text-base text-sm font-medium text-gray-800 hover:bg-opacity-75"
               >
                 LinkedIn{" "}
@@ -54,7 +57,7 @@ export default function Header() {
               <a
                 href="https://github.com/jeanduplessis"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer noopener"
                 className="inline-block bg-blue-200 py-2 px-4 border border-transparent rounded-md md:text-base text-sm font-medium text-gray-800 hover:bg-opacity-75"
               >
                 GitHub{" "}

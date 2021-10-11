@@ -4,7 +4,7 @@ export default function Readme() {
       <section id="readme">
         <h2>README</h2>
         <p>
-          If I'm your manager or colleague, the information in this section will
+          If I&apos;m your manager or colleague, the information in this section will
           help you understand how I do things and how best to work with me.
         </p>
         <h3>Management style</h3>

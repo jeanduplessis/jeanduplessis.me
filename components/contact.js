@@ -47,8 +47,8 @@ export default function Contact() {
           >
             <MailOpenIcon className="self-start justify-self-center row-span-2 w-8" />
             <pre onClick={mailMe} className="cursor-pointer">
-              ((me.firstname + me.surname.split(' ').map((x) ={">"}
-              x.charAt(0)).join('')) + "@gmail.com").toLowerCase()
+              ((me.firstname + me.surname.split(&apos; &apos;).map((x) ={">"}
+              x.charAt(0)).join(&apos;&apos;)) + &quot;@gmail.com&quot;).toLowerCase()
             </pre>
             <small>
               If you want to contact me in a professional context your best bet
@@ -66,7 +66,7 @@ export default function Contact() {
               abs((((π^4*10^9-1)/3)-(1984*1985*2014)+3294561174)*-1)
             </pre>
             <small>
-              I don't answer calls from unexpected unknown numbers. Best to text
+              I don&apos;t answer calls from unexpected unknown numbers. Best to text
               me on iMessage, Telegram, or Signal.
             </small>
           </div>

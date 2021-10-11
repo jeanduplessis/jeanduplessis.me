@@ -9,7 +9,7 @@ export default function Footer() {
           <a
             href="https://linkedin.com/in/jeandp"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer noopener"
             className="text-gray-600 hover:text-gray-800"
           >
             LinkedIn{" "}
@@ -18,7 +18,7 @@ export default function Footer() {
           <a
             href="https://github.com/jeanduplessis"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer noopener"
             className="text-gray-600 hover:text-gray-800"
           >
             GitHub{" "}

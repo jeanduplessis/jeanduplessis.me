@@ -28,7 +28,7 @@ export default function Home() {
           <pre className="text-gray-800">
             humans.
             <span className="text-purple-700">find</span>(
-            <span className="text-green-700">"Jean du Plessis"</span>
+            <span className="text-green-700">&quot;Jean du Plessis&quot;</span>
             ).
             <span className="text-purple-700">print</span>
             ()
