@@ -1,4 +1,4 @@
-const withPWA = require('next-pwa')
+const withPWA = require("next-pwa");
 
 const securityHeaders = [
   {
@@ -17,7 +17,9 @@ const securityHeaders = [
 ];
 
 module.exports = withPWA({
-  webpack5: true,
+  pwa: {
+    dest: "public",
+  },
   images: {
     domains: ["mirrors.creativecommons.org"],
   },
