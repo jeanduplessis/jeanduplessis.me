@@ -24,7 +24,7 @@ export default function Header() {
                   <span className="sr-only">Jean du Plessis</span>
 
                   <Image
-                    src="/jean-du-plessis-profile@2x.png"
+                    src="/jean-du-plessis-profile@2x.webp"
                     alt="Jean du Plessis' avatar"
                     title="Jean du Plessis' avatar"
                     width={100}

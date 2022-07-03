@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jeanduplessis.me
+
+# Sitemaps
+Sitemap: https://jeanduplessis.me/sitemap.xml

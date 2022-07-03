@@ -27,7 +27,7 @@ export default function About() {
 
         <figure>
           <Image
-            src="/family@2x.png"
+            src="/family@2x.webp"
             alt="Du Plessis family"
             title="Du Plessis family"
             width={400}

@@ -31,7 +31,7 @@ const entries = [
     data: {
       name: "Samewave",
       href: "https://samewave.com",
-      logoUrl: "/samewave-logo.png",
+      logoUrl: "/samewave-logo.webp",
       overview: "Samewave todo todo todo",
       employmentStart: "Feb 2017",
       employmentEnd: "June 2019",
@@ -43,7 +43,7 @@ const entries = [
     data: {
       name: "Mirum Agency",
       href: "https://mirumagency.com",
-      logoUrl: "/mirum-logo.png",
+      logoUrl: "/mirum-logo.webp",
       overview: "Samewave todo todo todo",
       employmentStart: "Mar 2006",
       employmentEnd: "Jan 2017",
