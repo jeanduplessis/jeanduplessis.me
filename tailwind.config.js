@@ -1,7 +1,5 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
       fontFamily: {
        'sans': ['Roboto','Helvetica', 'Arial', 'sans-serif'],
@@ -10,10 +8,6 @@ module.exports = {
       },
     letterSpacing: { widest: "0.25em" },
     extend: {},
-  },
-
-  variants: {
-    extend: {},
-  },
+  },  
   plugins: [require("@tailwindcss/typography")],
 };
