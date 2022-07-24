@@ -10,7 +10,7 @@ const entries = [
       logoUrl: "/sourcegraph-logo.svg",
       overview: "Sourcegraph todo todo todo",
       employmentStart: "November 2020",
-      employmentEnd: "Current",
+      employmentEnd: "June 2022",
     },
   },
   {
@@ -59,7 +59,7 @@ export default function Career() {
         <p>
           After completing my studies and spending my early-career as a Java Web
           Developer at a few places, I had the priviledge of spending the last
-          15+ years working with some amazing people who have shaped me into who
+          18+ years working with some amazing people who have shaped me into who
           I am today as a professional and human.
         </p>
 

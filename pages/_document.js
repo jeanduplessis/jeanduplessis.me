@@ -80,7 +80,7 @@ class MyDocument extends Document {
             href="/icons/safari-pinned-tab.svg"
             color="#5bbad5"
           />
-          <link rel="shortcut icon" href="/jean-du-plessis-profile@2x.png" />
+          <link rel="shortcut icon" href="/jean-du-plessis-profile@2x.webp" />
 
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://jeanduplessis.me" />
@@ -104,7 +104,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://jeanduplessis.me" />
           <meta
             property="og:image"
-            content="https://yourdomain.com/icons/apple-touch-icon.png"
+            content="https://jeanduplessis.com/icons/apple-touch-icon.png"
           />
         </Head>
         <body>
