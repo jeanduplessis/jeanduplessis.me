@@ -182,6 +182,11 @@ export default function Readme() {
           reviews.
         </p>
 
+        <p>
+          This also helps me avoid recency bias and ensure I don&apos;t forget
+          anything.
+        </p>
+
         {/* ----- SKIP-LEVEL MEETINGS ----- */}
 
         <h3>Skip-level meetings</h3>
@@ -203,12 +208,7 @@ export default function Readme() {
         <p>
           I view skip-level meetings as an invaluable activity to ensure I keep
           my finger on the pulse of what happens day-to-day, understand the
-          challenges faces and to gather feedback I can give to my managers.
-        </p>
-
-        <p>
-          This also helps me avoid recency bias and ensure I don&apos;t forget
-          anything.
+          challenges faced, and to gather feedback I can give to my managers.
         </p>
 
         {/* ----- FEEDBACK ----- */}
@@ -221,14 +221,14 @@ export default function Readme() {
         <p>
           First I want you to understand that I really value feedback and it is
           one of the highest forms of respect you can show me. You don&apos;t
-          have to be concerned with how you deliver it. Raw unfiltered feedback is
-          totally fine and I will assume positive intent from your side.
+          have to be concerned with how you deliver it. Raw unfiltered feedback
+          is totally fine and I will assume positive intent from your side.
         </p>
         <p>
-          If you therefor have any feedback, questions, concerns, or anything else that
-          you want me to know about, please don&apos;t hesitate to contact me
-          directly. Send me a message via email, Slack or schedule a time for us
-          to video chat (my preference).
+          If you therefor have any feedback, questions, concerns, or anything
+          else that you want me to know about, please don&apos;t hesitate to
+          contact me directly. Send me a message via email, Slack or schedule a
+          time for us to video chat (my preference).
         </p>
         <p>
           If you wish to remain anonymous, you may use the following form:{" "}
@@ -244,8 +244,8 @@ export default function Readme() {
         <p>
           If you are my report, you can expect me to regularly give you positive
           and constructive improvement feedback. I aim to praise my reports in
-          public (Slack channels, team sync/retrospective meetings). Still,
-          constructive improvement feedback will always be in private.
+          public (Slack channels, team sync/retrospective meetings).
+          Constructive improvement feedback will always be in private.
         </p>
       </section>
     </>

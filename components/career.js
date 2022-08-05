@@ -2,7 +2,20 @@ import Image from "next/image";
 
 const entries = [
   {
-    id: 1,
+    id: "upbound",
+    type: "company",
+    data: {
+      name: "Upbound",
+      href: "https://upbound.io",
+      logoUrl: "/upbound-logo.webp",
+      overview: "Sourcegraph todo todo todo",
+      employmentStart: "August 2022",
+      employmentEnd: "Current",
+      title: "Senior Engineering Manager",
+    },
+  },
+  {
+    id: "sourcegraph",
     type: "company",
     data: {
       name: "Sourcegraph",
@@ -11,10 +24,11 @@ const entries = [
       overview: "Sourcegraph todo todo todo",
       employmentStart: "November 2020",
       employmentEnd: "June 2022",
+      title: "Director of Engineering",
     },
   },
   {
-    id: 2,
+    id: "gitlab",
     type: "company",
     data: {
       name: "Gitlab",
@@ -23,10 +37,11 @@ const entries = [
       overview: "Gitlab todo todo todo",
       employmentStart: "July 2019",
       employmentEnd: "October 2020",
+      title: "Engineering Manager",
     },
   },
   {
-    id: 3,
+    id: "samewave",
     type: "company",
     data: {
       name: "Samewave",
@@ -35,10 +50,11 @@ const entries = [
       overview: "Samewave todo todo todo",
       employmentStart: "Feb 2017",
       employmentEnd: "June 2019",
+      title: "Senior Engineering",
     },
   },
   {
-    id: 4,
+    id: "mirum",
     type: "company",
     data: {
       name: "Mirum Agency",
@@ -47,6 +63,7 @@ const entries = [
       overview: "Samewave todo todo todo",
       employmentStart: "Mar 2006",
       employmentEnd: "Jan 2017",
+      title: "CTO",
     },
   },
 ];
@@ -57,11 +74,14 @@ export default function Career() {
       <section id="career" className="mt-4">
         <h2>Career</h2>
         <p>
-          After completing my studies and spending my early-career as a Java Web
-          Developer at a few places, I had the priviledge of spending the last
-          18+ years working with some amazing people who have shaped me into who
-          I am today as a professional and human.
+          After completing my studies and spending my early-career as a Java
+          software developer at a few places, I had the priviledge of spending
+          the last 18+ years working with some amazing people at amazing
+          companies who have shaped me into who I am today as a professional and
+          human.
         </p>
+
+        <p>You can read more about my role at these companies on my <a href="https://linkedin.com/in/jeandp">LinkedIn profile</a></p>
 
         <div className="flow-root mt-8">
           <ul role="list">
@@ -100,6 +120,8 @@ export default function Career() {
                             <p className="mt-0.5 text-sm text-gray-500">
                               {entry.data.employmentStart} -{" "}
                               {entry.data.employmentEnd}
+                              <br />
+                              <em>{entry.data.title}</em>
                             </p>
                           </div>
                           {/* <div className="mt-2 text-sm text-gray-700">
