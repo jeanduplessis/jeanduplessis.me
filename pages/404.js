@@ -25,10 +25,12 @@ export default function NotFound() {
           It looks like the page you’re looking for doesn&apos;t exist.
         </p>
         <div className="mt-6">
-          <Link href="/">
-            <a className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black text-opacity-75 bg-white bg-opacity-75 sm:bg-opacity-25 sm:hover:bg-opacity-50">
+          <Link
+            href="/"
+            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black text-opacity-75 bg-white bg-opacity-75 sm:bg-opacity-25 sm:hover:bg-opacity-50">
+            
               Go back home
-            </a>
+            
           </Link>
         </div>
       </div>

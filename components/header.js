@@ -19,20 +19,19 @@ export default function Header() {
         <div className="w-full py-3 flex items-center justify-between border-b border-gray-900 lg:border-none">
           <div className="flex items-center">
             <Link href="/">
-              <a>
-                <span className="sr-only">Jean du Plessis</span>
 
-                <Image
-                  src="/jean-du-plessis-profile@2x.webp"
-                  alt="Jean du Plessis' avatar"
-                  title="Jean du Plessis' avatar"
-                  width={100}
-                  height={103}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                  }} />
-              </a>
+              <span className="sr-only">Jean du Plessis</span>
+              <Image
+                src="/jean-du-plessis-profile@2x.webp"
+                alt="Jean du Plessis' avatar"
+                title="Jean du Plessis' avatar"
+                width={100}
+                height={103}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
+
             </Link>
             <div className="hidden ml-10 space-x-10 lg:block">
               {navigation.map((link) => (
