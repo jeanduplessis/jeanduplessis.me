@@ -81,7 +81,7 @@ export default function About() {
         from others.
       </p>
 
-      <p>I like emojis. You'll often find me using some of my favorites 🤷‍♂️🤦‍♂️👍💩.</p>
+      <p>I like emojis. You&apos;ll often find me using some of my favorites 🤷‍♂️🤦‍♂️👍💩.</p>
     </section>
   </>);
 }
