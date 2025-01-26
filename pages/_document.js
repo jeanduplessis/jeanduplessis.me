@@ -80,7 +80,7 @@ class MyDocument extends Document {
             href="/icons/safari-pinned-tab.svg"
             color="#5bbad5"
           />
-          <link rel="shortcut icon" href="/jean-du-plessis-profile@2x.webp" />
+          <link rel="shortcut icon" href="/jean-du-plessis-profile-large@2x.webp" />
 
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://jeanduplessis.me" />

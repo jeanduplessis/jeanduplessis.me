@@ -22,11 +22,12 @@ export default function Header() {
 
               <span className="sr-only">Jean du Plessis</span>
               <Image
-                src="/jean-du-plessis-profile@2x.webp"
+                src="/jean-du-plessis-profile-large@2x.webp"
                 alt="Jean du Plessis' avatar"
                 title="Jean du Plessis' avatar"
                 width={100}
-                height={103}
+                height={100}
+                priority={true}
                 style={{
                   maxWidth: "100%",
                   height: "auto"

@@ -1,5 +1,3 @@
-const withPWA = require("next-pwa");
-
 const securityHeaders = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -16,15 +14,15 @@ const securityHeaders = [
   },
 ];
 
-module.exports = withPWA({
-  pwa: {
-    dest: "public",
-    disable: process.env.NODE_ENV === 'development',
-    register: true,
-  },
+module.exports = {
   images: {
     dangerouslyAllowSVG: true,
-    domains: ["mirrors.creativecommons.org"],
+    remotePatterns: [
+      {
+        hostname: 'mirrors.creativecommons.org',
+        pathname: '**',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   async headers() {
@@ -36,4 +34,4 @@ module.exports = withPWA({
       },
     ];
   },
-});
+};

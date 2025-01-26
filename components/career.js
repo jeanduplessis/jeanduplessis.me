@@ -8,10 +8,10 @@ const entries = [
       name: "Upbound",
       href: "https://upbound.io",
       logoUrl: "/upbound-logo.webp",
-      overview: "Sourcegraph todo todo todo",
+      overview: "Todo",
       employmentStart: "August 2022",
       employmentEnd: "Current",
-      title: "Senior Engineering Manager",
+      title: "Director of Engineering",
     },
   },
   {
@@ -21,7 +21,7 @@ const entries = [
       name: "Sourcegraph",
       href: "https://about.sourcegraph.com",
       logoUrl: "/sourcegraph-logo.svg",
-      overview: "Sourcegraph todo todo todo",
+      overview: "Todo",
       employmentStart: "November 2020",
       employmentEnd: "June 2022",
       title: "Director of Engineering",
@@ -34,7 +34,7 @@ const entries = [
       name: "Gitlab",
       href: "https://about.gitlab.com",
       logoUrl: "/gitlab-logo.svg",
-      overview: "Gitlab todo todo todo",
+      overview: "Todo",
       employmentStart: "July 2019",
       employmentEnd: "October 2020",
       title: "Engineering Manager",
@@ -47,7 +47,7 @@ const entries = [
       name: "Samewave",
       href: "https://samewave.com",
       logoUrl: "/samewave-logo.webp",
-      overview: "Samewave todo todo todo",
+      overview: "Todo",
       employmentStart: "Feb 2017",
       employmentEnd: "June 2019",
       title: "Senior Engineering",
@@ -60,7 +60,7 @@ const entries = [
       name: "Mirum Agency",
       href: "https://mirumagency.com",
       logoUrl: "/mirum-logo.webp",
-      overview: "Samewave todo todo todo",
+      overview: "Todo",
       employmentStart: "Mar 2006",
       employmentEnd: "Jan 2017",
       title: "CTO",
@@ -75,7 +75,7 @@ export default function Career() {
       <p>
         After completing my studies and spending my early-career as a Java
         software developer at a few places, I had the priviledge of spending
-        the last 18+ years working with some amazing people at amazing
+        the last 20+ years working with some amazing people at amazing
         companies who have shaped me into who I am today as a professional and
         human.
       </p>
@@ -104,10 +104,7 @@ export default function Career() {
                           width={40}
                           height={40}
                           className="h-10 w-10 rounded-full flex items-center justify-center ring-8 ring-white bg-white"
-                          style={{
-                            maxWidth: "100%",
-                            height: "auto"
-                          }} />
+                           />
                       </div>
                       <div className="min-w-0 flex-1">
                         <div>
