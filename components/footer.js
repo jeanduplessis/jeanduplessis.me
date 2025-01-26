@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@heroicons/react/outline";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
             className="text-gray-600 hover:text-gray-800"
           >
             LinkedIn{" "}
-            <ExternalLinkIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
+            <ArrowTopRightOnSquareIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
           </a>
           <a
             href="https://github.com/jeanduplessis"
@@ -22,7 +22,7 @@ export default function Footer() {
             className="text-gray-600 hover:text-gray-800"
           >
             GitHub{" "}
-            <ExternalLinkIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
+            <ArrowTopRightOnSquareIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
           </a>
         </div>
         <div className="mt-8 md:mt-0 md:order-1">

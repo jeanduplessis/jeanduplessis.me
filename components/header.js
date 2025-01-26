@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLinkIcon } from "@heroicons/react/outline";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "About", href: "#about" },
@@ -52,7 +52,7 @@ export default function Header() {
                 className="inline-block bg-blue-200 py-2 px-4 border border-transparent rounded-md md:text-base text-sm font-medium text-gray-800 hover:bg-opacity-75"
               >
                 LinkedIn{" "}
-                <ExternalLinkIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
+                <ArrowTopRightOnSquareIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
               </a>
               <a
                 href="https://github.com/jeanduplessis"
@@ -61,7 +61,7 @@ export default function Header() {
                 className="inline-block bg-blue-200 py-2 px-4 border border-transparent rounded-md md:text-base text-sm font-medium text-gray-800 hover:bg-opacity-75"
               >
                 GitHub{" "}
-                <ExternalLinkIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
+                <ArrowTopRightOnSquareIcon className="inline-block w-4 h-4 align-baseline text-gray-600 relative top-1 pb-1 left-1" />
               </a>
             </div>
           </div>
