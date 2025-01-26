@@ -1,18 +1,19 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen">
+    (<main className="min-h-screen">
       <Image
         alt="Bus lost in dessert facing mountains"
         src="/not-found-bg.jpg"
-        layout="fill"
-        objectFit="cover"
         quality={100}
         className="fixed min-h-screen overflow-hidden"
-      />
-
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
       <div className="max-w-7xl mx-auto px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48 relative z-index-1">
         <p className="text-sm font-semibold text-black text-opacity-50 uppercase tracking-wide">
           404 error
@@ -31,6 +32,6 @@ export default function NotFound() {
           </Link>
         </div>
       </div>
-    </main>
+    </main>)
   );
 }

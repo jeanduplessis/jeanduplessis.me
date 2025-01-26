@@ -1,9 +1,9 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200">
+    (<footer className="bg-gray-200">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <a
@@ -50,8 +50,11 @@ export default function Footer() {
                   alt="CC: Creative Commons"
                   title="CC: Creative Commons"
                   width={20}
-                  height={20}                  
-                />
+                  height={20}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
 
               <div className="inline-block mr-1 relative top-1">
@@ -62,7 +65,10 @@ export default function Footer() {
                   width={20}
                   height={20}
                   className=""
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
 
               <div className="inline-block mr-1 relative top-1">
@@ -73,12 +79,15 @@ export default function Footer() {
                   width={20}
                   height={20}
                   className=""
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             </a>
           </div>
         </div>
       </div>
-    </footer>
+    </footer>)
   );
 }
