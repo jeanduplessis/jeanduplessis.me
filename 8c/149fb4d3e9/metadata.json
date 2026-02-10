@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "8c149fb4d3e9",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".eslintrc.json",
+    "eslint.config.mjs",
+    "package.json",
+    "stylelint.config.js",
+    "stylelint.config.mjs"
+  ],
+  "sessions": [
+    {
+      "metadata": "/8c/149fb4d3e9/0/metadata.json",
+      "transcript": "/8c/149fb4d3e9/0/full.jsonl",
+      "context": "/8c/149fb4d3e9/0/context.md",
+      "content_hash": "/8c/149fb4d3e9/0/content_hash.txt",
+      "prompt": "/8c/149fb4d3e9/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 39,
+    "cache_creation_tokens": 71678,
+    "cache_read_tokens": 1049990,
+    "output_tokens": 2092,
+    "api_call_count": 33
+  }
+}

@@ -1,0 +1,114 @@
+Implement the following plan:
+
+# Upgrade All Dependencies to Latest
+
+## Context
+
+The project (jeanduplessis.me) is a Next.js Pages Router personal website using JavaScript (no TypeScript). All dependencies are outdated — several have major version bumps available. The user wants everything upgraded to the latest versions.
+
+## Version Changes Summary
+
+### Dependencies
+| Package | Current | Target |
+|---------|---------|--------|
+| `@heroicons/react` | ^2.2.0 | ^2.2.0 (already latest) |
+| `@tailwindcss/postcss` | ^4.0.0 | ^4.1.18 |
+| `@tailwindcss/typography` | ^0.5.16 | ^0.5.19 |
+| `@vercel/analytics` | ^1.4.1 | ^1.6.1 |
+| `@vercel/speed-insights` | ^1.1.0 | ^1.3.1 |
+| `next` | ^15.1.6 | ^16.1.6 |
+| `react` | ^19.0.0 | ^19.2.4 |
+| `react-dom` | ^19.0.0 | ^19.2.4 |
+| `sharp` | ^0.33.5 | ^0.34.5 |
+
+### DevDependencies
+| Package | Current | Target |
+|---------|---------|--------|
+| `autoprefixer` | ^10.4.20 | ^10.4.24 |
+| `eslint` | ^9.19.0 | ^10.0.0 |
+| `eslint-config-next` | ^15.1.6 | ^16.1.6 |
+| `next-sitemap` | ^4.2.3 | ^4.2.3 (check latest) |
+| `postcss` | ^8.5.1 | ^8.5.6 |
+| `prettier` | ^3.4.2 | ^3.8.1 |
+| `stylelint` | ^16.14.0 | ^17.2.0 |
+| `stylelint-config-idiomatic-order` | ^10.0.0 | (check latest) |
+| `stylelint-order` | ^6.0.4 | ^7.0.1 |
+| `stylelint-prettier` | ^5.0.2 | ^5.0.3 |
+| `tailwindcss` | ^4.0.0 | ^4.1.18 |
+
+## Steps
+
+### Step 1: Update `package.json` version ranges
+- Update all dependency and devDependency version ranges to target versions listed above
+- File: `package.json`
+
+### Step 2: Convert ESLint to flat config (required by ESLint 10)
+ESLint 10 removes the legacy `.eslintrc.*` config format. Must migrate to flat config.
+
+- **Delete** `.eslintrc.json`
+- **Create** `eslint.config.mjs` with flat config format using `eslint-config-next`:
+  ```js
+  import { FlatCompat } from "@eslint/eslintrc";
+
+  const compat = new FlatCompat();
+
+  export default [...compat.extends("next/core-web-vitals")];
+  ```
+  Note: May need to install `@eslint/eslintrc` as a devDependency if `eslint-config-next` v16 doesn't natively export flat config. Will verify during implementation.
+
+### Step 3: Update lint script in `package.json` (required by Next.js 16)
+Next.js 16 removes the `next lint` command.
+
+- Change `"lint": "next lint"` → `"lint": "eslint ."`
+- File: `package.json`
+
+### Step 4: Convert Stylelint config to ESM (required by Stylelint 17)
+Stylelint 17 removes CommonJS support for the Node.js API.
+
+- **Rename** `stylelint.config.js` → `stylelint.config.mjs`
+- Convert `module.exports = { ... }` → `export default { ... }`
+- Convert `plugins: ["stylelint-order", "stylelint-prettier"]` to ESM string references (these should still work as strings)
+- File: `stylelint.config.mjs`
+
+### Step 5: Run `npm install`
+- Delete `node_modules` and `package-lock.json` for a clean install
+- Run `npm install` to install all updated dependencies
+- Resolve any peer dependency conflicts
+
+### Step 6: Verify the build
+- Run `npm run build` to confirm the project builds successfully
+- Run `npm run lint` to confirm linting works with the new config
+- Fix any build or lint errors that arise
+
+## Files to Modify
+- `package.json` — version bumps + lint script change
+- `.eslintrc.json` — delete (replaced by `eslint.config.mjs`)
+- `eslint.config.mjs` — new file (flat config)
+- `stylelint.config.js` — rename to `stylelint.config.mjs` and convert to ESM
+
+## Files That Should NOT Need Changes
+- `next.config.js` — `module.exports` still supported; `remotePatterns` already used (not deprecated `domains`); no removed features used
+- `tailwind.config.js` — Tailwind v4 backward-compatible with JS config
+- `postcss.config.mjs` — already ESM, no changes needed
+- `next-sitemap.config.js` — no breaking changes
+- Page/component files — Pages Router has no async params breaking change
+
+## Verification
+1. `npm run build` — confirms Next.js 16 build works
+2. `npm run lint` — confirms ESLint 10 flat config works
+3. `npm run dev` — start dev server and visually verify the site loads correctly
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /Users/jeanduplessis/.REDACTED.jsonl
+
+---
+
+[Request interrupted by user]
+
+---
+
+Start an agent team and implement the plan
+
+---
+
+commit this

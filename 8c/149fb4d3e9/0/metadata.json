@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "8c149fb4d3e9",
+  "session_id": "237d842b-85e6-4027-82b7-635ecb28e493",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-10T17:13:58.524319Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".eslintrc.json",
+    "eslint.config.mjs",
+    "package.json",
+    "stylelint.config.js",
+    "stylelint.config.mjs"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "c8c59e90-f57d-4011-a900-d3d2031609c4",
+  "token_usage": {
+    "input_tokens": 39,
+    "cache_creation_tokens": 71678,
+    "cache_read_tokens": 1049990,
+    "output_tokens": 2092,
+    "api_call_count": 33
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-10T17:13:58.457416Z",
+    "agent_lines": 25,
+    "human_added": 2828,
+    "human_modified": 6,
+    "human_removed": 0,
+    "total_committed": 2859,
+    "agent_percentage": 0.8744316194473591
+  }
+}
