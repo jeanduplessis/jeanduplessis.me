@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "eba8046e14b5",
+  "session_id": "9f62d132-b2c8-47dc-8c1e-6b9f366553ef",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-14T02:48:13.431499Z",
+  "branch": "feat/hero-nav-and-copy-refinements",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "pages/1.js",
+    "pages/index.js"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "96ede720-be4f-4a9b-95da-cccab153cfaa",
+  "token_usage": {
+    "input_tokens": 36,
+    "cache_creation_tokens": 63211,
+    "cache_read_tokens": 936849,
+    "output_tokens": 10858,
+    "api_call_count": 18
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-14T02:48:13.384271Z",
+    "agent_lines": 0,
+    "human_added": 0,
+    "human_modified": 3960,
+    "human_removed": 1362,
+    "total_committed": 950,
+    "agent_percentage": 0
+  }
+}
