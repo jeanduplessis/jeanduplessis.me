@@ -1,0 +1,151 @@
+As you scroll down the page, we should highlight the section that is in view in the main nav
+
+---
+
+Replace "JdP" in top nav with profile picture
+
+---
+
+Remove the profile image from the About section
+
+---
+
+Change the caption of the image in the about section to "From left: Hannah, Jane, Tracy, Grace and Isabella."
+
+---
+
+Show profile picture as part of hero section
+
+---
+
+The quality and color of the profile image doesn't seem good compared to the src
+
+---
+
+Remove Cape Town, South Africa from hero section
+
+---
+
+Replace all instances of " -- " with appropriate grammar
+
+---
+
+So many em dashes in the copy will make it look like AI generated content. Let's fix this
+
+---
+
+Change "just a scenic drive from Cape Town" to "just a short scenic drive from Cape Town"
+
+---
+
+Remove the paragraph: "I am also a keen sports fan and, when the day winds down, you will likely find me unwinding with a game on the PS5. These quieter pursuits balance the intensity that comes with leading engineering teams across multiple time zones."
+
+---
+
+## Context
+
+- Current git status: On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   components/contact.js
+	modified:   pages/index.js
+	modified:   public/sitemap-0.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.claude/
+	.entire/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+- Current git diff (staged and unstaged changes): <persisted-output>
+Output too large (39.7KB). Full output saved to: /Users/jeanduplessis/.REDACTED.txt
+
+Preview (first 2KB):
+diff --git a/components/contact.js b/components/contact.js
+index b9e40e1..f01107c 100644
+--- a/components/contact.js
++++ b/components/contact.js
+@@ -1,65 +1,16 @@
+ import * as React from "react";
+-import { DevicePhoneMobileIcon, EnvelopeOpenIcon } from "@heroicons/react/20/solid";
+-
+-const me = {
+-  firstname: "Jean",
+-  surname: "du Plessis",
+-};
+ 
+ export default function Contact() {
+-  function callMe() {
+-    window.open("tel:+27832642825");
+-  }
+-
+-  function mailMe() {
+-    window.open(
+-      "mailto:" +
+-        (
+-          me.firstname +
+-          me.surname
+-            .split(" ")
+-            .map((x) => x.charAt(0))
+-            .join("") +
+-          "@gmail.com"
+-        ).toLowerCase()
+-    );
+-
+-    return false;
+-  }
+-
+   return (
+     <>
+       <section id="contact" className="mt-4">
+         <h2>Contact</h2>
+-        <div className="max-w-max overflow-x-scroll overflow-y-hidden whitespace-nowrap">
+-          <div
+-            className="grid grid-rows-2 grid-cols-2"
+-            style={{ gridTemplateColumns: "3rem 1fr" }}
+-          >
+-            <EnvelopeOpenIcon className="self-start justify-self-center row-span-2 w-8" />
+-            <pre onClick={mailMe} className="cursor-pointer">
+-              jeandp@gmail.com
+-            </pre>
+-            <small>
+-              If you want to contact me in a professional context your best bet
+-              is to contact me through{" "}
+-              <a href="https://linkedin.com/in/jeandp">LinkedIn</a>.
+-            </small>
+-          </div>
+-
+-          <div
+-            className="grid grid-rows-2 grid-cols-2"
+-            style={{ gridTemplateColumns: "3rem 1fr" }}
+-          >
+-            <DevicePhoneMobileIcon className="self-start justify-self-center row-span-2 w-8" />
+-            <pre onClick={callMe} className="cursor-pointer">
+-              +27 83 264 2825
+-            </pre>
+-            <small>
+-              I don&apos;t answer calls from unexpected unknown numbers. Best to text
+...
+</persisted-output>
+- Current branch: main
+
+## Your task
+
+Based on the above changes:
+
+1. Create a new branch if on main
+2. Create a single commit with an appropriate message
+3. Push the branch to origin
+4. Create a pull request using `gh pr create`
+5. You have the capability to call multiple tools in a single response. You MUST do all of the above in a single message. Do not use any other tools or do anything else. Do not send any other text or messages besides these tool calls.
+
+---
+
+Add import { Analytics } from "@vercel/analytics/next" to app layout
+
+---
+
+COmmit and push
