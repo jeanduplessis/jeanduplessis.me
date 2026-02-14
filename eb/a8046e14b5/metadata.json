@@ -3,7 +3,7 @@
   "checkpoint_id": "eba8046e14b5",
   "strategy": "manual-commit",
   "branch": "feat/hero-nav-and-copy-refinements",
-  "checkpoints_count": 14,
+  "checkpoints_count": 25,
   "files_touched": [
     ".claude/settings.local.json",
     "components/contact.js",
@@ -42,13 +42,20 @@
       "context": "/eb/a8046e14b5/3/context.md",
       "content_hash": "/eb/a8046e14b5/3/content_hash.txt",
       "prompt": "/eb/a8046e14b5/3/prompt.txt"
+    },
+    {
+      "metadata": "/eb/a8046e14b5/4/metadata.json",
+      "transcript": "/eb/a8046e14b5/4/full.jsonl",
+      "context": "/eb/a8046e14b5/4/context.md",
+      "content_hash": "/eb/a8046e14b5/4/content_hash.txt",
+      "prompt": "/eb/a8046e14b5/4/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 10028,
-    "cache_creation_tokens": 271853,
-    "cache_read_tokens": 4942805,
-    "output_tokens": 21965,
-    "api_call_count": 104
+    "input_tokens": 10116,
+    "cache_creation_tokens": 309958,
+    "cache_read_tokens": 8218916,
+    "output_tokens": 28210,
+    "api_call_count": 169
   }
 }
