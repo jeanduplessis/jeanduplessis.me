@@ -1,0 +1,300 @@
+Base directory for this skill: /Users/jeanduplessis/.claude/plugins/cache/claude-plugins-official/frontend-design/2cd88e7947b7/skills/frontend-design
+
+This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.
+
+The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technical constraints.
+
+## Design Thinking
+
+Before coding, understand the context and commit to a BOLD aesthetic direction:
+- **Purpose**: What problem does this interface solve? Who uses it?
+- **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian, etc. There are so many flavors to choose from. Use these for inspiration but design one that is true to the aesthetic direction.
+- **Constraints**: Technical requirements (framework, performance, accessibility).
+- **Differentiation**: What makes this UNFORGETTABLE? What's the one thing someone will remember?
+
+**CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work - the key is intentionality, not intensity.
+
+Then implement working code (HTML/CSS/JS, React, Vue, etc.) that is:
+- Production-grade and functional
+- Visually striking and memorable
+- Cohesive with a clear aesthetic point-of-view
+- Meticulously refined in every detail
+
+## Frontend Aesthetics Guidelines
+
+Focus on:
+- **Typography**: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics; unexpected, characterful font choices. Pair a distinctive display font with a refined body font.
+- **Color & Theme**: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes.
+- **Motion**: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions. Use scroll-triggering and hover states that surprise.
+- **Spatial Composition**: Unexpected layouts. Asymmetry. Overlap. Diagonal flow. Grid-breaking elements. Generous negative space OR controlled density.
+- **Backgrounds & Visual Details**: Create atmosphere and depth rather than defaulting to solid colors. Add contextual effects and textures that match the overall aesthetic. Apply creative forms like gradient meshes, noise textures, geometric patterns, layered transparencies, dramatic shadows, decorative borders, custom cursors, and grain overlays.
+
+NEVER use generic AI-generated aesthetics like overused font families (Inter, Roboto, Arial, system fonts), cliched color schemes (particularly purple gradients on white backgrounds), predictable layouts and component patterns, and cookie-cutter design that lacks context-specific character.
+
+Interpret creatively and make unexpected choices that feel genuinely designed for the context. No design should be the same. Vary between light and dark themes, different fonts, different aesthetics. NEVER converge on common choices (Space Grotesk, for example) across generations.
+
+**IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
+
+Remember: Claude is capable of extraordinary creative work. Don't hold back, show what can truly be created when thinking outside the box and committing fully to a distinctive vision.
+
+ARGUMENTS: Create 5 design layouts in parallel to propose a new visual identity for this website's home page. Each design should be accessible when going to the route /1, /2, etc.
+
+---
+
+<task-notification>
+<task-id>af9af80</task-id>
+<status>completed</status>
+<summary>Agent "Design 1: Editorial Magazine" completed</summary>
+<result>No lint errors either. The page is fully clean.
+
+Here is a summary of what was created:
+
+**File:** `/Users/jeanduplessis/Development/jeanduplessis/jeanduplessis.me/pages/1.js`
+
+**Overview:**
+A self-contained editorial/magazine-style portfolio page for Jean du Plessis. The page exports a default React component and is fully functional within the existing Pages Router Next.js project.
+
+**Design Implementation:**
+
+1. **Typography** -- Google Fonts `Playfair Display` (headings/display) and `DM Sans` (body) are loaded via an `@import` inside a `<style>` tag within the component.
+
+2. **Color Palette** -- Warm cream background (`#F5F0EB`), deep charcoal text (`#2C2C2C`), burnt sienna accent (`#C45D3E`), warm gray secondary (`#8B8178`), and soft divider rules (`#D4CBC2`).
+
+3. **Layout Structure:**
+   - **Sticky navigation** with the monogram "JdP" and small-caps section links with animated underline hover effects
+   - **Full-viewport hero** with the name in oversized `Playfair Display` (using `clamp(3rem, 9vw, 10rem)`), subtitle, thin accent rule, and a scroll indicator with pulsing animation
+   - **About section (01)** -- Asymmetric two-column grid with profile image (sepia-tinted CSS filter with hover-to-color transition), family photo with caption, and body text with a decorative drop cap on the first paragraph
+   - **Pull quote** -- Centered editorial callout with large decorative opening quotation mark: "Trust is the single most important component..."
+   - **README section (02)** -- Four-card grid covering management philosophy, trust, growth/development, and communication cadence
+   - **Career section (03)** -- Magazine-style alternating timeline with company logos, centered vertical line, and dot markers on desktop; stacks vertically on mobile
+   - **Contact section (04)** -- Two-column layout with contact links styled as a structured list with animated hover underlines
+   - **Footer** -- Minimal, refined treatment with name/location and social links
+
+4. **Animations:**
+   - Hero name reveals with a letter-spacing contraction animation
+   - Staggered fade-in-up on hero subtitle, rule, and location
+   - Scroll-triggered `IntersectionObserver` reveals for all section content (`.editorial-reveal` class toggling `.editorial-visible`)
+   - Link hover underlines that grow from left to right using `::after` pseudo-elements
+   - Scroll indicator with a pulsing accent line
+
+5. **Responsive Design:**
+   - All grids collapse to single-column on mobile
+   - Font sizes use `clamp()` for fluid scaling
+   - Timeline switches from alternating left/right to stacked vertical on mobile
+   - Navigation spacing and padding adjust for small screens
+
+6. **Images:** Uses `next/image` (`Image` component) for the profile photo, family photo, and all five company logos, with proper `width`, `height`, and `alt` attributes.</result>
+<usage>total_tokens: 26926
+tool_uses: 7
+duration_ms: 157164</usage>
+</task-notification>
+Full transcript available at: /private/tmp/claude-501/-Users-jeanduplessis-Development-jeanduplessis-jeanduplessis-me/tasks/af9af80.output
+
+---
+
+<task-notification>
+<task-id>a26c116</task-id>
+<status>completed</status>
+<summary>Agent "Design 5: Swiss Grid Minimal" completed</summary>
+<result>The build succeeds and the new page `/5` is correctly generated as a static page. Here is a summary of what was created.
+
+---
+
+## File Created
+
+**`/Users/jeanduplessis/Development/jeanduplessis/jeanduplessis.me/pages/5.js`**
+
+This is a self-contained Next.js page implementing a Swiss International Typographic Style redesign of Jean du Plessis's personal portfolio. Key aspects of the implementation:
+
+### Design System
+- **Typography:** Archivo Black for display headings, Archivo for body text, imported via `@import url(...)` in a `<style>` tag
+- **Color Palette:** Pure white (#FFFFFF) background, true black (#000000) text, Swiss red (#FF0000) accent, light gray (#E5E5E5) grid lines, medium gray (#666666) secondary text
+- **Grid:** 12-column CSS Grid with visible grid lines rendered as faint vertical column guides, max-width 1400px, 20px gutters
+
+### Sections
+1. **Hero** -- Massive typographic scale with "JEAN" in smaller Archivo Black and "DU PLESSIS" in enormous viewport-width-spanning type (up to 15vw/220px). Profile image with solid black border, red "Engineering Leader" label, and social links. A red accent line animates in on scroll.
+
+2. **About** -- Two-column layout with biographical text on the left and the family photo (thin black border, no rounding) on the right. Covers faith, personality, family details, and location.
+
+3. **Career** -- Structured data table with years displayed in oversized red Archivo Black type on the left, company name with logo and role on the right. Horizontal rules separate entries. A "20+" years summary at the bottom.
+
+4. **Manager README** -- Six numbered management principles with oversized red numbers (01-06) on the left and title/description on the right. Covers trust, hiring, management style, career development, meeting cadence, and feedback.
+
+5. **Contact** -- Monospace-styled email, phone, LinkedIn, GitHub, and location with small-caps labels.
+
+6. **Footer** -- Single thin red line followed by minimal footer text.
+
+### Features
+- **Section sidebar labels** rotated 90 degrees in the left grid column (collapses to horizontal on mobile)
+- **Scroll-triggered animations** using IntersectionObserver -- elements slide in from the left with staggered delays
+- **Red accent lines** that animate their width on scroll
+- **Hover states** on links transition from black to red
+- **Fully responsive** -- grid collapses cleanly on mobile (768px breakpoint), grid lines hide, sidebar labels become horizontal, career rows stack
+- **Zero external dependencies** beyond Next.js (`next/head`, `next/image`) and React
+
+### Verification
+- ESLint passes with zero errors on the new file
+- Production build succeeds and the page is generated as static content at `/5`</result>
+<usage>total_tokens: 25083
+tool_uses: 8
+duration_ms: 128941</usage>
+</task-notification>
+Full transcript available at: /private/tmp/claude-501/-Users-jeanduplessis-Development-jeanduplessis-jeanduplessis-me/tasks/a26c116.output
+
+---
+
+<task-notification>
+<task-id>a3b3b70</task-id>
+<status>completed</status>
+<summary>Agent "Design 3: Coastal Organic" completed</summary>
+<result>The build compiles successfully with no errors. The new page at `/3` is included and generates as static content.
+
+Here is a summary of what was created:
+
+**File:** `/Users/jeanduplessis/Development/jeanduplessis/jeanduplessis.me/pages/3.js`
+
+**Design -- "Coastal Organic / Cape Town Nature":**
+
+The page is a fully self-contained, production-quality portfolio redesign with the following sections and design elements:
+
+**Typography:** Google Fonts `Lora` (italic for display headings and quotes) and `Source Sans 3` (body text), imported via a `<style>` tag with `@import`.
+
+**Color palette:** Warm sand (#FAF6F1) background, deep ocean (#1B4965), teal water (#5FA8D3), warm sand accent (#D4A373), kelp green (#606C38), foam white (#FEFAE0), sunset coral (#E07A5F), and deep navy (#1D3557) text.
+
+**Sections:**
+1. **Hero** -- Full-viewport gradient from deep ocean blue through teal to sand, with animated SVG wave dividers at the bottom, decorative floating blob shapes, organic blob-masked profile image, Jean's name in large Lora italic, title, location, and LinkedIn/GitHub pill-shaped buttons.
+2. **Floating Navigation** -- Fixed pill-shaped nav bar at the top with backdrop blur, linking to About/Career/README/Contact sections.
+3. **About** -- Family photo with organic rounded corners, two paragraphs of bio content covering family (wife Tracy, quadruplets Grace/Isabella/Hannah/Jane, dogs Maddy/Max/Milo), faith, personality, and a Lora italic quote.
+4. **Career Timeline** -- Horizontally scrolling postcard-style cards with company logos, role titles, date ranges, and descriptions for all five positions (Upbound, Sourcegraph, GitLab, Samewave, Mirum Agency). Cards have soft shadows and hover lift effects.
+5. **Manager README** -- Seven floating "pebble" cards with organic rounded shapes, slight rotations for a scattered natural feel, and gentle bobbing CSS animations. Covers: Trust First, Hire Smart People, Hands-Off/Always Available, Career Growth, Regular 1-1s, Feedback Culture, and CliftonStrengths.
+6. **Contact** -- "Message in a Bottle" themed section with deep ocean background, animated SVG wave lines, email/phone links with inline SVG icons, and LinkedIn/GitHub buttons, all in a glowing card container.
+7. **Footer** -- Sand-colored with grain texture overlay.
+
+**Animations:**
+- SVG wave dividers with `<animate>` for continuous wave motion between sections
+- `IntersectionObserver`-based scroll fade-in with upward float
+- Decorative blobs with floating/bobbing CSS keyframe animations at different speeds
+- Gentle bobbing on README pebble cards with staggered delays
+- Hover effects with scale and shadow transitions on career and pebble cards
+
+**Responsive:** The layout uses `clamp()` for fluid typography, CSS Grid with `auto-fill` for the pebble cards, and the horizontal career scroll adapts naturally on mobile. Bobbing animations are disabled on small screens for performance.</result>
+<usage>total_tokens: 29807
+tool_uses: 9
+duration_ms: 184368</usage>
+</task-notification>
+Full transcript available at: /private/tmp/claude-501/-Users-jeanduplessis-Development-jeanduplessis-jeanduplessis-me/tasks/a3b3b70.output
+
+---
+
+<task-notification>
+<task-id>a45b371</task-id>
+<status>completed</status>
+<summary>Agent "Design 2: Terminal Brutalist" completed</summary>
+<result>Build succeeds. The page is at `/2` and is statically generated. Here is a summary of what was created:
+
+---
+
+## File Created
+
+**`/Users/jeanduplessis/Development/jeanduplessis/jeanduplessis.me/pages/2.js`**
+
+## Design Overview
+
+The page is a fully self-contained, terminal/brutalist-themed portfolio page that simulates an SSH session into Jean's personal server. Here is what it includes:
+
+### Terminal Chrome
+- A sticky top bar with the classic red/yellow/green macOS window dots and the title `jean@kleinmond:~ -- bash`
+- Content constrained to `max-width: 80ch` to simulate a real terminal
+
+### Visual Effects (all CSS, no JS dependencies)
+- **Scanline overlay**: A repeating linear gradient that slowly scrolls across the screen, simulating CRT scanlines
+- **CRT flicker**: A subtle opacity animation that mimics the flicker of an old monitor
+- **Noise/grain texture**: An SVG-based noise overlay at low opacity for that authentic CRT feel
+- **Green text glow**: `text-shadow` with green luminance on key elements
+- **Fade-in animations**: Each "terminal line" fades in with staggered `animation-delay` values to simulate text being outputted line by line
+- **Blinking cursor**: A block cursor that blinks at the final prompt
+- **Custom scrollbar**: Styled green-on-black to match the terminal theme
+
+### Typography
+- **JetBrains Mono** as the primary font (imported from Google Fonts via `@import`)
+- **IBM Plex Mono** as fallback for longer body text paragraphs
+
+### Color Palette
+- Background: `#0A0E14` (deep terminal black)
+- Primary text: `#00FF41` (phosphor green)
+- Accent: `#FFB627` (amber/gold for the prompt username and markdown headings)
+- Dim text: `#4A5568` (for comments and secondary info)
+- Highlight: `#FF3366` (for list markers and blockquote indicators)
+- Blue: `#5c8fff` (for the `~` in the prompt, mimicking bash PS1)
+
+### Content Sections (structured as terminal commands)
+
+1. **`$ whoami`** -- ASCII art of "Jean du Plessis" with title, location, profile photo, and social links
+2. **`$ cat about.txt`** -- Full about section with family photo, personal details about family, outdoors, sports, faith, social media views, and introversion
+3. **`$ cat README.md`** -- Management style README with markdown-style formatting (`#`, `##`, `###` headings in amber, numbered/bulleted lists with red markers). Covers management style, trust, getting-to-know-you process, 1-1s, growth logs, skip-levels, and feedback philosophy
+4. **`$ ls -la career/`** -- Career timeline presented as directory listing entries with company logos, active/closed status badges, titles, and date ranges for Upbound, Sourcegraph, GitLab, Samewave, and Mirum Agency
+5. **`$ cat .contact`** -- Contact info formatted as a TOML-style config file with sections for email, phone, social links, and location coordinates
+6. **`$ echo 'Thanks for visiting.'`** -- Closing with a glowing pulse animation and the John 13:34 quote in an ASCII box, followed by a blinking cursor prompt
+
+### Helper Components (defined in the same file)
+- **`Prompt`** -- Renders the `jean@kleinmond:~$` prompt with optional command text and blinking cursor
+- **`Divider`** -- ASCII `====` line dividers between sections
+- **`CareerEntry`** -- Structured career entry with company logo, status badge, company link, title, and dates
+
+### Responsive
+- The `80ch` max-width naturally adapts to narrower screens
+- `flex-wrap` and `word-break: break-word` ensure content reflows on mobile
+- The terminal window chrome stays sticky at the top for navigation context
+
+### Verification
+- Next.js build: passes cleanly with the page statically generated at `/2`
+- ESLint: passes with zero errors</result>
+<usage>total_tokens: 37317
+tool_uses: 17
+duration_ms: 227962</usage>
+</task-notification>
+Full transcript available at: /private/tmp/claude-501/-Users-jeanduplessis-Development-jeanduplessis-jeanduplessis-me/tasks/a45b371.output
+
+---
+
+<task-notification>
+<task-id>adcd0e0</task-id>
+<status>completed</status>
+<summary>Agent "Design 4: Art Deco Geometric" completed</summary>
+<result>No lint errors. The page is fully working. Here is a summary of what was created:
+
+---
+
+**File created:** `/Users/jeanduplessis/Development/jeanduplessis/jeanduplessis.me/pages/4.js`
+
+## What was built
+
+A fully self-contained Art Deco-inspired portfolio page for Jean du Plessis with the following sections and design elements:
+
+### Sections
+
+1. **Hero** - Full viewport height with a CSS `conic-gradient` sunburst radiating from the center. The name "Jean du Plessis" is displayed in Bodoni Moda with a gold shimmer animation (`goldShimmer` keyframes animating `background-position` on a clipped gradient). The profile image is framed in a diamond `clip-path` with nested rotated border elements. Gold horizontal rules sit above and below the content. Social links (LinkedIn, GitHub) are separated by a small diamond ornament. A scroll indicator arrow sits at the bottom.
+
+2. **About** - Two-column grid layout with a text panel (corner ornaments via `::before`/`::after` pseudo-elements) and the family photo in a double-bordered gold frame. Content includes personal details about location, family (wife Tracy, quadruplet daughters, three dogs), faith, and personality.
+
+3. **Career** - Vertical timeline with a gold gradient center line (desktop) or left-aligned line (mobile). Each career entry has a diamond-shaped node with a subtle pulse animation. Cards alternate left/right on desktop. Each card includes the company logo, role, period, and description for all five positions (Upbound, Sourcegraph, GitLab, Samewave, Mirum Agency).
+
+4. **Manager README** - Six principle cards in a responsive grid, each with a large gradient-filled number badge (01-06), title, gold accent line, and description. Covers: Trust First, Hire Smart People, Hands-Off/Always Available, Career Growth, Feedback Culture, and Regular Touchpoints.
+
+5. **Contact** - Centered panel with corner ornaments containing email (`jeandp@gmail.com`) and phone (`+27 83 264 2825`) as gold-colored interactive links, plus LinkedIn and GitHub links.
+
+6. **Footer** - Dark surface background with a repeating gold/rose pattern bar, chevron-pattern bar, name, location, year, and a row of small diamond ornaments.
+
+### Design System
+
+- **Typography:** Bodoni Moda (display/headings) + Outfit (body), loaded via Google Fonts `@import` in a `<style jsx global>` tag
+- **Color palette:** Deep navy `#0D1B2A`, gold `#D4AF37`, cream `#F0E6D3`, rose gold `#B76E79`, teal `#2E8B8B`, dark surface `#1B2838`, bright gold `#FFD700`
+- **Navigation:** Fixed sidebar on desktop (vertical text links with diamond ornaments) and a fixed top bar on mobile, both with glassmorphism on mobile
+- **Animations:** Gold shimmer on the hero heading, slow-rotating sunburst background, IntersectionObserver-powered entrance animations (slide + scale), hover glow on cards, pulse on timeline nodes
+- **Decorative elements:** Diamond/rotated-square ornaments, corner ornaments via CSS pseudo-elements, geometric repeating-linear-gradient grid pattern, chevron/zigzag borders, Art Deco dividers with parallel lines and center diamond
+- **Responsive:** Uses Tailwind responsive classes (`md:`) combined with inline styles, with the timeline switching from centered alternating to left-aligned on mobile</result>
+<usage>total_tokens: 31321
+tool_uses: 7
+duration_ms: 189576</usage>
+</task-notification>
+Full transcript available at: /private/tmp/claude-501/-Users-jeanduplessis-Development-jeanduplessis-jeanduplessis-me/tasks/adcd0e0.output
